@@ -1,1 +1,4 @@
-Testing out some stuff.
+---
+layout: post
+title: Blogging Like a Hacker
+---
