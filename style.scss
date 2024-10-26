@@ -242,8 +242,12 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border: 1px solid $lightGray; // Adds a border around each post
+  border-radius: 5px;           // Rounds the corners of the border
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adds a subtle shadow
+  background-color: $white;     // Ensures background color inside the border is white
 }
 
 .posts > .post:last-child {
