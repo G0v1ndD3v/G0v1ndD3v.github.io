@@ -105,15 +105,22 @@ a {
   width: 70px;
   height: 70px;
   margin-right: 15px;
+  border: 2px solid #2d3b2d; // Adds a dark green border for retro styling
+  border-radius: 50%; // Circular profile picture
+  overflow: hidden;   // Ensures the image stays within the circle
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // Adds a subtle shadow
 
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px; // Center and add spacing on mobile
   }
 
   img {
-    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Ensures image fills the circle
+    border-radius: 50%; // Keeps the image itself circular
   }
 }
 
